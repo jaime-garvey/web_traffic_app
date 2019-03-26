@@ -17,13 +17,13 @@ def model():
 def youtube():
     return render_template('youtube.html')
 
-# @app.route("/recommend-apparel", methods=["POST", "GET"] )
-# def model():
-#     return render_template('apparel.html')
+@app.route("/recommend-apparel", methods=["POST", "GET"] )
+def apparel():
+    return render_template('apparel.html')
 #
-# @app.route("/recommend-wishlist", methods=["POST", "GET"] )
-# def model():
-#     return render_template('wishlist.html')
+@app.route("/recommend-wishlist", methods=["POST", "GET"] )
+def wishlist():
+    return render_template('wishlist.html')
 
 @app.errorhandler(404)
 def page_not_found(e):

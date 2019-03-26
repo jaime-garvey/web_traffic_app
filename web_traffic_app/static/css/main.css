@@ -292,6 +292,12 @@ text-align: right;
   color: #242424;
   padding: 0 6px 0 6px;
   margin: 40px 0 40px 0px;
+  border-color: #6c757d;
+  }
+  #right-side button:hover {
+    color: #fff;
+    background-color: #DFDFDF;
+    border-color: #DFDFDF;
 }
 #right-side .menu li a::after {
   position: absolute;
@@ -1002,7 +1008,7 @@ footer {
   align-self: "center";
 }
 
-img.display-im {
+#left-side img {
   margin-left: auto;
   margin-right: auto;
   display: block;
