@@ -1,0 +1,123 @@
+{% extends "base.html"%}
+{% block content %}
+
+<!-- <div id="data" class="col-12""> -->
+
+<!-- Model -->
+<style type="text/css">
+
+  .link {
+    fill: none;
+    stroke: #666;
+    stroke-width: 1.5px;
+  }
+
+  .node circle {
+    fill: #ccc;
+    stroke: #fff;
+    stroke-width: 1.5px;
+  }
+
+  text {
+    font: 10px sans-serif;
+    pointer-events: none;
+  }
+
+  /* .svg-container {
+    display: inline-block;
+    position: relative;
+    width: 100%;
+    padding-bottom: 100%; /* aspect ratio */
+    /* vertical-align: top;
+    overflow: hidden;
+}
+.svg-content-responsive {
+    display: inline-block;
+    position: absolute;
+    top: 10px;
+    left: 0;
+} */
+
+  </style>
+
+  <body>
+  <script src="//d3js.org/d3.v3.min.js"></script>
+
+<div class="container-fluid">
+  <div class="row">
+
+
+
+    <div id="left-side" class="col-8">
+
+      <div id="network-graph"></div>
+      <!-- <script type="text/javascript" src="../static/js/network.js"></script> -->
+      <img src="../static/img/step1.png">
+
+    </div>
+
+
+
+<!-- Right Side Text -->
+<div id="right-side" class="col-4">
+  <div class="logo"><a href="/"><h1>WEB OPS.</h1></a></div>
+
+  <h1>A Look into Webpage Recommendation</h1>
+  <p>Explore an approach to engage online traffic with this recommender that blends the most relevant content with your most high-value content. Get starting now:  </p>
+  <div class="dropdown">
+  <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    Choose Page
+    </button>
+  <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+    <a class="dropdown-item" href="{{url_for_android}}">Android</a>
+    <a class="dropdown-item" href="{{url_for_wishlist}}">Apparel</a>
+    <a class="dropdown-item" href="{{url_for_android}}">Bags</a>
+    <a class="dropdown-item" href="{{url_for_android}}">Basket</a>
+    <a class="dropdown-item" href="{{url_for_android}}">Brands</a>
+    <a class="dropdown-item" href="{{url_for_android}}">Drinkware</a>
+    <a class="dropdown-item" href="{{url_for_android}}">Google Apparel</a>
+    <a class="dropdown-item" href="{{url_for_android}}">Headgear</a>
+    <a class="dropdown-item" href="{{url_for_youtube}}">Home</a>
+    <a class="dropdown-item" href="{{url_for_android}}">Google Backpacks</a>
+    <a class="dropdown-item" href="{{url_for_android}}">Accessories</a>
+    <a class="dropdown-item" href="{{url_for_android}}">Men's Shirts</a>
+    <a class="dropdown-item" href="{{url_for_android}}">Electronics</a>
+    <a class="dropdown-item" href="{{url_for_android}}">Sign-in</a>
+    <a class="dropdown-item" href="{{url_for_android}}">Android</a>
+    <a class="dropdown-item" href="{{url_for_android}}">Apparel</a>
+    <a class="dropdown-item" href="{{url_for_android}}">Women's Shirts</a>
+    <a class="dropdown-item" href="{{url_for_android}}">Socks</a>
+    <a class="dropdown-item" href="{{url_for_apparel}}">YouTube</a>
+    <a class="dropdown-item" href="{{url_for_android}}">Wishlist</a>
+
+  </div>
+  </div>
+
+	<!-- <div id="particles-js"></div> -->
+
+
+
+				<div class="social">
+					<ul>
+						<li><a href="#"><i class="fab fa-facebook-square"></i></a></li>
+						<li><a href="#"><i class="fab fa-twitter"></i></a></li>
+						<li><a href="#"><i class="fab fa-linkedin"></i></a></li>
+						<li><a href="https://github.com/jaime-garvey" target="_blank"><i class="fab fa-github"></i></a></li>
+					</ul>
+					<p>App by Jaime Garvey</p>
+				</div>
+
+		</div>
+
+		<!-- Right Side Text End -->
+
+
+
+</div>
+
+</div>
+
+
+
+<!-- Model END-->
+{% endblock %}
