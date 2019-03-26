@@ -83,15 +83,17 @@
 <div id="particles-js"></div>
 <!-- -->
 
-<div class="logo"><a href="base.html"><h1>WEB OPS.</h1></a></div>
+<div class="logo"><a href="{{url_for('index')}}"><h1>WEB OPS.</h1></a></div>
 			<div class="wrapper">
 				<h2>Web -<br><span>Personalization</span></h2>
-				<p>A Markov approach<br>for personalize webpage recommendations. <span class="typewrite" data-period="2000" data-type='[ "Bootstrap 4.", "LESS.", "jQuery."]'></span></p>
-				<ul class="menu">
+				<p>A Markov approach<br>for personalize webpage recommendations. <br>Data from Google Merchandise Store.</p>
+				<!-- <ul class="menu">
 					<li><a href="/" class="active">Home</a></li>
 					<li><a href="model.html">Model</a></li>
 					<li><a href="blog.html">Data</a></li>
-				</ul>
+				</ul> -->
+				<br>
+				<p>Click to <span class="typewrite" data-period="2000" data-type='[ "Explore.", "Learn.", "Visualize."]'></span></p>
 				<form class="" action="{{url_for('model')}}">
 <!-- <button class="btn btn-primary text-uppercase small" data-toggle="modal" data-target="#alertModal" type="button" onclick="{{url_for('model')}}">Begin</button> -->
 <button type="submit" name="" value="submit">Begin</button>
