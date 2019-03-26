@@ -964,6 +964,7 @@ text-align: right;
 
 /* 11.0 - Footer */
 footer {
+  bottom: 0;
   padding: 55px 30px;
   background-color: #262626;
   color: #fff;
