@@ -40,21 +40,36 @@ links.forEach(function(link) {
 
 // 960, 500
 
-var width = 300,
+var width = 460,
     height = 200;
+
+// var width = el[0][0].offsetWidth - margin.left - margin.right;
+// var height = width;
+
+
+var margin = {
+  top: 20,
+  right: 20,
+  bottom: 30,
+  left: 20
+};
+
+var svg = d3.select('#network-graph').append('svg')
+    .attr("width", width)
+    .attr("height", height);
+
+
 
 var force = d3.layout.force()
     .nodes(d3.values(nodes))
     .links(links)
     .size([width, height])
-    .linkDistance(60)
+    .linkDistance(40)
     .charge(-300)
     .on("tick", tick)
     .start();
 
-var svg = d3.select("body").append("svg")
-    .attr("width", width)
-    .attr("height", height);
+
 
 var link = svg.selectAll(".link")
     .data(force.links())

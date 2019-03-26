@@ -6,6 +6,11 @@
 <!-- Model -->
 <style type="text/css">
 
+.network-graph {
+    width: 500px;
+    margin: 50px auto
+}
+
 .link {
   fill: none;
   stroke: #666;
@@ -23,30 +28,34 @@ text {
   pointer-events: none;
 }
 
+
 </style>
 
-<script src="https://d3js.org/d3.v3.min.js"></script>
+
 
 
 
 <div class="container-fluid">
   <div class="row">
 
-    <div class="col">
-      <div class="">
+
+    <div id="left-side" class="col">
+
+
+
+
+      <div id="network-graph" class="network-graph"></div>
       <script type="text/javascript" src="../static/js/network.js"></script>
+
+
       </div>
-    </div>
+
 
 
 <!-- Right Side Text -->
-<div id="right-side" class="col-6">
+<div id="right-side" class="col-4">
   <div class="logo"><a href="/"><h1>WEB OPS.</h1></a></div>
-	<br>
-	<br>
-	<br>
-	<br>
-	<br>
+
   <h1>A Look into Webpage Recommendation</h1>
   <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
 
@@ -72,9 +81,13 @@ text {
 
 		<!-- Right Side Text End -->
 
+
+
 </div>
 
 </div>
+
+
 <!-- </div> -->
 
 
