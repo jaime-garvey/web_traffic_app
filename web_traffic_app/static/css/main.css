@@ -995,3 +995,15 @@ footer {
     background-color: #222;
     color: #fff;
     opacity: 0.8; }
+
+/* image */
+
+.filename {
+  align-self: "center";
+}
+
+img.display-im {
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
